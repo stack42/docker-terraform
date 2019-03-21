@@ -11,6 +11,9 @@ http://www.terraform.io/
 
 This Docker image is based on the official [Debian:stable-slim](https://hub.docker.com/_/debian) image.
 
+## Dockerhub
+
+https://hub.docker.com/r/stack42/terraform
 
 ## How to run this image
 
