@@ -13,3 +13,8 @@ RUN apt-get update && apt-get install -y \
 
 
 ENTRYPOINT ["./terraform"]
+
+ARG VCS_REF
+
+LABEL org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.vcs-url="https://github.com/stack42/docker-terraform"
