@@ -1,5 +1,7 @@
 # docker-terraform
-
+[![](https://images.microbadger.com/badges/image/stack42/terraform.svg)](http://microbadger.com/images/stack42/terraform "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/stack42/terraform.svg)](https://hub.docker.com/r/stack42/terraform/)
+[![Docker Hub](http://img.shields.io/docker/pulls/stack42/terraform.svg)](https://hub.docker.com/r/stack42/terraform/)
 
 ## About terraform
 
