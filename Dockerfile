@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:stable-slim AS builder
 
 ENV TERRAFORM_VERSION=0.11.13
 
@@ -11,6 +11,13 @@ RUN apt-get update && apt-get install -y \
   wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip  &&\
   unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /
 
+# Second stage.
+
+FROM debian:stable-slim
+
+WORKDIR /
+
+COPY --from=builder /terraform /
 
 ENTRYPOINT ["./terraform"]
 
