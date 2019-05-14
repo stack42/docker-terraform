@@ -24,12 +24,12 @@ Latest stable version
 docker run -it --rm  stack42/terraform <command> [<args>]
 ```
 
-0.12.0-beta1 version
+0.12.0-rc1 version
 ```
-docker run -it --rm  stack42/terraform:0.12.0-beta1 <command> [<args>]
+docker run -it --rm  stack42/terraform:0.12.0-rc1 <command> [<args>]
 ```
 
 example
 ```
-docker run -it --rm  stack42/terraform:0.12.0-beta1 plan
+docker run -it --rm  stack42/terraform:0.12.0-rc1 plan
 ```
