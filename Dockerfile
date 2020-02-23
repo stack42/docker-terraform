@@ -1,6 +1,6 @@
 FROM debian:stable-slim AS builder
 
-ENV TERRAFORM_VERSION=0.12.20
+ENV TERRAFORM_VERSION=0.12.21
 
 WORKDIR /
 
